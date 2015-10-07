@@ -22,7 +22,8 @@
 - (void)setupGameVars {
     
     [self.boolConcept generatePowerSeries];
-    [self.boolConcept dumpConceptLog]; //TODO REMOVE
+    NSString *dump = [self.boolConcept dumpConceptLog]; //TODO REMOVE
+    NSLog(@"%@",dump);
     
     //setup positive examplars
     //TODO CHOOSE RANDOMLY
@@ -75,14 +76,38 @@
     return (self.current_hint < [self.boolConcept.powerSeries.powerSeries count]);
 }
 
-/** Returns a boolean object serving as a hint. Actually representing one of the polynomials of the power series */
-- (BoolConceptObject*)getHint {
+/** Returns a boolean object serving as a hint. Actually representing one of the polynomials of the power series
+    @param a pointer to the object to assign to
+    @return YES if the hint is positive, NO if the hint is negative
+ */
+- (BOOL)getHintTo: (BoolConceptObject**)boolObj {
     //TODO implement
     if (![self isAnyHintLeft]) return nil;   //Just a sanity check. isAnyHintLeft should still be called before getHint.
     
+    NSInteger numOfPositivesInPoly = [[self.boolConcept.powerSeries.powerSeries objectAtIndex:self.current_hint] numberOfRegularitiesK];
+
     BoolConceptObject *retObj = [[self.boolConcept.powerSeries.powerSeries objectAtIndex:self.current_hint] returnAsObject];
+
+    //if polynomial is K=0, we need to switch the color and present the hint as positive. if not, we leave it as is and declare the hint negative
+    NSInteger currFeature;
+    BOOL isHintPositive = (numOfPositivesInPoly == 1);
+    if (isHintPositive) {
+        for (int i=0; i<retObj.numberOfFeaturesD; i++) {
+            currFeature = [[retObj.objectFeatureVector.featVector objectAtIndex:i] integerValue];
+            if (currFeature == [BOOL_VECTOR_IGNORE_FEATURE integerValue]) continue; //keep going until 'care' feature is found
+            if (currFeature % 2 == 0) { //switch feature value
+                currFeature++;
+            }
+            else {
+                currFeature--;
+            }
+            [retObj.objectFeatureVector.featVector setObject:@(currFeature) atIndexedSubscript:i];
+        }
+    }
+    
     self.current_hint++;
-    return retObj;
+    *boolObj = retObj;
+    return isHintPositive;
 }
 
 - (void)resetHints {
@@ -122,7 +147,8 @@
 /** Checks if the user managed to learn the concept. Current criterion is being able to correctly identify all objects in a row */
 - (BOOL)isWin {
     //TODO MAYBE CONDITION TO WIN LESS HARSH?
-    return (self.corrects == self.number_of_object_in_game);
+    return (self.correct_in_a_row == self.number_of_object_in_game);
+//    return (self.corrects == self.number_of_object_in_game);
 }
 
 /** Checks if user was correct about current object being or not being correct for the regularity */

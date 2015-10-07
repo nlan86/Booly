@@ -42,7 +42,7 @@ typedef NSMutableArray BoolConceptUniverse;
 -(BoolConcept*)initRandomLinearConceptForNumberOfFeatures:(int)numOfFeatures  numberOfConstantImplications:(int)numOfConstants numberOfPairwiseImplications:(int)numOfPairwise numOfValues:(int)numOfValues WithUniverse:(BoolConceptUniverse*)universe;
 
 #pragma mark Debugging
-- (void)dumpConceptLog;
+- (NSMutableString*)dumpConceptLog;
 
 #pragma mark class methods
 + (NSMutableArray*)generateUniverseForNumberOfFeatures:(int)forNumberOfFeatures;

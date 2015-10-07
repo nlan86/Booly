@@ -65,7 +65,7 @@ NSInteger comparePolynomialKs (id first_p, id second_p, void *context) {
 /**Returns a representation of the polynomial as a boolean object. "Dont cares" will be left as -1 */
 - (BoolConceptObject*)returnAsObject {
     BooleanVector *myVector = self.regularity;
-    BoolConceptObject *retObject = [[BoolConceptObject alloc] initWithFeatureVector:myVector];
+    BoolConceptObject *retObject = [[BoolConceptObject alloc] initWithFeatureVector:[myVector copy]];
     return retObject;
 }
 

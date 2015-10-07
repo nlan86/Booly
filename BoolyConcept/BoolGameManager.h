@@ -36,7 +36,7 @@
 - (BOOL)isWin;
 - (void)startNewGame;
 - (BOOL)sendAnswerCheckIfCorrect:(BOOL)yesOrNo;
-- (BoolConceptObject*)getHint;
+- (BOOL)getHintTo: (BoolConceptObject**)boolObj;
 - (BOOL)isAnyHintLeft;
 - (void)resetHints;
 

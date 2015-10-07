@@ -21,6 +21,10 @@
 		CB3BD2F21BBEEF5F00F4860E /* BooleanCommons.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2EC1BBEEF5F00F4860E /* BooleanCommons.m */; settings = {ASSET_TAGS = (); }; };
 		CB3BD2F31BBEEF5F00F4860E /* BoolPolynomial.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2ED1BBEEF5F00F4860E /* BoolPolynomial.m */; settings = {ASSET_TAGS = (); }; };
 		CB3BD2F91BBF017A00F4860E /* ObjectToGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2F81BBF017A00F4860E /* ObjectToGraphics.m */; settings = {ASSET_TAGS = (); }; };
+		CB504A571BC51E4C00FCCD1A /* negative_clean_50px.png in Resources */ = {isa = PBXBuildFile; fileRef = CB504A561BC51E4C00FCCD1A /* negative_clean_50px.png */; settings = {ASSET_TAGS = (); }; };
+		CB504A5B1BC51E9300FCCD1A /* positive_clean_50px.png in Resources */ = {isa = PBXBuildFile; fileRef = CB504A5A1BC51E9300FCCD1A /* positive_clean_50px.png */; settings = {ASSET_TAGS = (); }; };
+		CB504A5E1BC51F6E00FCCD1A /* positive_filled_50px.png in Resources */ = {isa = PBXBuildFile; fileRef = CB504A5C1BC51F6E00FCCD1A /* positive_filled_50px.png */; settings = {ASSET_TAGS = (); }; };
+		CB504A5F1BC51F6E00FCCD1A /* negative_filled_50px.png in Resources */ = {isa = PBXBuildFile; fileRef = CB504A5D1BC51F6E00FCCD1A /* negative_filled_50px.png */; settings = {ASSET_TAGS = (); }; };
 		CB6B4C7C1BC199B0008EE1A3 /* BoolGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6B4C7B1BC199B0008EE1A3 /* BoolGameManager.m */; settings = {ASSET_TAGS = (); }; };
 		CBF8D6AA1BC0488600FF0A4F /* BoolObjectView4Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF8D6A91BC0488600FF0A4F /* BoolObjectView4Colors.m */; settings = {ASSET_TAGS = (); }; };
 		CBF8D6AD1BC0555600FF0A4F /* ColorsMainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF8D6AC1BC0555600FF0A4F /* ColorsMainScreenViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -44,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB3BD2AB1BBE9ECC00F4860E /* BoolyConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoolyConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3BD2AB1BBE9ECC00F4860E /* Booly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Booly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3BD2AF1BBE9ECC00F4860E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB3BD2B11BBE9ECC00F4860E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB3BD2B21BBE9ECC00F4860E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,10 +56,10 @@
 		CB3BD2BA1BBE9ECC00F4860E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB3BD2BD1BBE9ECC00F4860E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB3BD2BF1BBE9ECC00F4860E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB3BD2C41BBE9ECC00F4860E /* BoolyConceptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoolyConceptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3BD2C41BBE9ECC00F4860E /* BoolyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoolyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3BD2C81BBE9ECC00F4860E /* BoolyConceptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoolyConceptTests.m; sourceTree = "<group>"; };
 		CB3BD2CA1BBE9ECC00F4860E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB3BD2CF1BBE9ECC00F4860E /* BoolyConceptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoolyConceptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3BD2CF1BBE9ECC00F4860E /* BoolyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoolyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3BD2D31BBE9ECC00F4860E /* BoolyConceptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoolyConceptUITests.m; sourceTree = "<group>"; };
 		CB3BD2D51BBE9ECC00F4860E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB3BD2E21BBEEF5F00F4860E /* BoolConcept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoolConcept.h; sourceTree = "<group>"; };
@@ -72,6 +76,10 @@
 		CB3BD2ED1BBEEF5F00F4860E /* BoolPolynomial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoolPolynomial.m; sourceTree = "<group>"; };
 		CB3BD2F71BBF017A00F4860E /* ObjectToGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectToGraphics.h; sourceTree = "<group>"; };
 		CB3BD2F81BBF017A00F4860E /* ObjectToGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectToGraphics.m; sourceTree = "<group>"; };
+		CB504A561BC51E4C00FCCD1A /* negative_clean_50px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = negative_clean_50px.png; sourceTree = "<group>"; };
+		CB504A5A1BC51E9300FCCD1A /* positive_clean_50px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = positive_clean_50px.png; sourceTree = "<group>"; };
+		CB504A5C1BC51F6E00FCCD1A /* positive_filled_50px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = positive_filled_50px.png; sourceTree = "<group>"; };
+		CB504A5D1BC51F6E00FCCD1A /* negative_filled_50px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = negative_filled_50px.png; sourceTree = "<group>"; };
 		CB6B4C7A1BC199B0008EE1A3 /* BoolGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoolGameManager.h; sourceTree = "<group>"; };
 		CB6B4C7B1BC199B0008EE1A3 /* BoolGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoolGameManager.m; sourceTree = "<group>"; };
 		CBF8D6A81BC0488600FF0A4F /* BoolObjectView4Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoolObjectView4Colors.h; sourceTree = "<group>"; };
@@ -118,9 +126,9 @@
 		CB3BD2AC1BBE9ECC00F4860E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB3BD2AB1BBE9ECC00F4860E /* BoolyConcept.app */,
-				CB3BD2C41BBE9ECC00F4860E /* BoolyConceptTests.xctest */,
-				CB3BD2CF1BBE9ECC00F4860E /* BoolyConceptUITests.xctest */,
+				CB3BD2AB1BBE9ECC00F4860E /* Booly.app */,
+				CB3BD2C41BBE9ECC00F4860E /* BoolyTests.xctest */,
+				CB3BD2CF1BBE9ECC00F4860E /* BoolyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 		CB3BD2AE1BBE9ECC00F4860E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB84E0C11BC51059000DA2D7 /* Images */,
 				CB3BD2BC1BBE9ECC00F4860E /* LaunchScreen.storyboard */,
 				CB3BD2AF1BBE9ECC00F4860E /* main.m */,
 			);
@@ -189,6 +198,17 @@
 			name = BooleanConceptFramework;
 			sourceTree = "<group>";
 		};
+		CB84E0C11BC51059000DA2D7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CB504A5C1BC51F6E00FCCD1A /* positive_filled_50px.png */,
+				CB504A5D1BC51F6E00FCCD1A /* negative_filled_50px.png */,
+				CB504A5A1BC51E9300FCCD1A /* positive_clean_50px.png */,
+				CB504A561BC51E4C00FCCD1A /* negative_clean_50px.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		CBF8D6A71BC037B100FF0A4F /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,9 +225,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB3BD2AA1BBE9ECC00F4860E /* BoolyConcept */ = {
+		CB3BD2AA1BBE9ECC00F4860E /* Booly */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB3BD2D81BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConcept" */;
+			buildConfigurationList = CB3BD2D81BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "Booly" */;
 			buildPhases = (
 				CB3BD2A71BBE9ECC00F4860E /* Sources */,
 				CB3BD2A81BBE9ECC00F4860E /* Frameworks */,
@@ -217,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = BoolyConcept;
+			name = Booly;
 			productName = BoolyConcept;
-			productReference = CB3BD2AB1BBE9ECC00F4860E /* BoolyConcept.app */;
+			productReference = CB3BD2AB1BBE9ECC00F4860E /* Booly.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CB3BD2C31BBE9ECC00F4860E /* BoolyConceptTests */ = {
+		CB3BD2C31BBE9ECC00F4860E /* BoolyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB3BD2DB1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConceptTests" */;
+			buildConfigurationList = CB3BD2DB1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyTests" */;
 			buildPhases = (
 				CB3BD2C01BBE9ECC00F4860E /* Sources */,
 				CB3BD2C11BBE9ECC00F4860E /* Frameworks */,
@@ -235,14 +255,14 @@
 			dependencies = (
 				CB3BD2C61BBE9ECC00F4860E /* PBXTargetDependency */,
 			);
-			name = BoolyConceptTests;
+			name = BoolyTests;
 			productName = BoolyConceptTests;
-			productReference = CB3BD2C41BBE9ECC00F4860E /* BoolyConceptTests.xctest */;
+			productReference = CB3BD2C41BBE9ECC00F4860E /* BoolyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CB3BD2CE1BBE9ECC00F4860E /* BoolyConceptUITests */ = {
+		CB3BD2CE1BBE9ECC00F4860E /* BoolyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB3BD2DE1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConceptUITests" */;
+			buildConfigurationList = CB3BD2DE1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyUITests" */;
 			buildPhases = (
 				CB3BD2CB1BBE9ECC00F4860E /* Sources */,
 				CB3BD2CC1BBE9ECC00F4860E /* Frameworks */,
@@ -253,9 +273,9 @@
 			dependencies = (
 				CB3BD2D11BBE9ECC00F4860E /* PBXTargetDependency */,
 			);
-			name = BoolyConceptUITests;
+			name = BoolyUITests;
 			productName = BoolyConceptUITests;
-			productReference = CB3BD2CF1BBE9ECC00F4860E /* BoolyConceptUITests.xctest */;
+			productReference = CB3BD2CF1BBE9ECC00F4860E /* BoolyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -294,9 +314,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB3BD2AA1BBE9ECC00F4860E /* BoolyConcept */,
-				CB3BD2C31BBE9ECC00F4860E /* BoolyConceptTests */,
-				CB3BD2CE1BBE9ECC00F4860E /* BoolyConceptUITests */,
+				CB3BD2AA1BBE9ECC00F4860E /* Booly */,
+				CB3BD2C31BBE9ECC00F4860E /* BoolyTests */,
+				CB3BD2CE1BBE9ECC00F4860E /* BoolyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,9 +326,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB504A5E1BC51F6E00FCCD1A /* positive_filled_50px.png in Resources */,
+				CB504A5B1BC51E9300FCCD1A /* positive_clean_50px.png in Resources */,
 				CB3BD2BE1BBE9ECC00F4860E /* LaunchScreen.storyboard in Resources */,
 				CB3BD2BB1BBE9ECC00F4860E /* Assets.xcassets in Resources */,
 				CB3BD2B91BBE9ECC00F4860E /* Main.storyboard in Resources */,
+				CB504A571BC51E4C00FCCD1A /* negative_clean_50px.png in Resources */,
+				CB504A5F1BC51F6E00FCCD1A /* negative_filled_50px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,12 +393,12 @@
 /* Begin PBXTargetDependency section */
 		CB3BD2C61BBE9ECC00F4860E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB3BD2AA1BBE9ECC00F4860E /* BoolyConcept */;
+			target = CB3BD2AA1BBE9ECC00F4860E /* Booly */;
 			targetProxy = CB3BD2C51BBE9ECC00F4860E /* PBXContainerItemProxy */;
 		};
 		CB3BD2D11BBE9ECC00F4860E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CB3BD2AA1BBE9ECC00F4860E /* BoolyConcept */;
+			target = CB3BD2AA1BBE9ECC00F4860E /* Booly */;
 			targetProxy = CB3BD2D01BBE9ECC00F4860E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -569,7 +593,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB3BD2D81BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConcept" */ = {
+		CB3BD2D81BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "Booly" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB3BD2D91BBE9ECC00F4860E /* Debug */,
@@ -578,7 +602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB3BD2DB1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConceptTests" */ = {
+		CB3BD2DB1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB3BD2DC1BBE9ECC00F4860E /* Debug */,
@@ -587,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB3BD2DE1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConceptUITests" */ = {
+		CB3BD2DE1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB3BD2DF1BBE9ECC00F4860E /* Debug */,

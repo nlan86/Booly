@@ -48,6 +48,11 @@
     [self.hintViews addObject:self.hintView1];
     [self.hintViews addObject:self.hintView2];
     [self.hintViews addObject:self.hintView3];
+    //collect hint images to array
+    self.hintImages = [NSMutableArray arrayWithCapacity:DEFAULT_NUMBER_OF_HINTS];
+    [self.hintImages addObject:self.hintImage1];
+    [self.hintImages addObject:self.hintImage2];
+    [self.hintImages addObject:self.hintImage3];
     
     //setup views to new game
     
@@ -59,7 +64,6 @@
 
 - (void)setupViewsToNewGame {
     //setup ui labels
-    self.label_complexity.text = [NSString stringWithFormat:@"%ld", self.gameManager.boolConcept.powerSeries.conceptComplexity];
     NSUInteger numOfObjects = [self.gameManager.boolConcept.universe count];
     self.label_corrects.text = [NSString stringWithFormat:@"%d/%ld",0,numOfObjects];
     
@@ -87,13 +91,19 @@
     self.mainObjectView.parentViewController = self;
     [self.mainObjectView setNeedsDisplay];
     
-    //setup hint views and hide them
+    //setup hint views and hide them + hint positive views
     BoolObjectView4Colors *curHintView;
+    UIImageView *curHintImgView;
     for (int h=0; h<[self.hintViews count]; h++) {
         curHintView = [self.hintViews objectAtIndex:h];
         curHintView.parentViewController = self;
         [curHintView setHidden:YES];
+        
+        curHintImgView = [self.hintImages objectAtIndex:h];
+        [curHintImgView setHidden:YES];
     }
+    [self.hintPlus1 setHidden:YES];
+    [self.hintPlus2 setHidden:YES];
     
     //setup last object view
     [self.lastObjectView setHidden:YES];
@@ -124,7 +134,7 @@
 - (void)handleUserAnswer: (BOOL)yesOrNo {
     BOOL correct = [self.gameManager sendAnswerCheckIfCorrect:yesOrNo];
     NSUInteger numOfObjects = [self.gameManager.boolConcept.universe count];
-    self.label_corrects.text = [NSString stringWithFormat:@"%ld/%ld",self.gameManager.corrects,numOfObjects];
+    self.label_corrects.text = [NSString stringWithFormat:@"%ld/%ld",self.gameManager.correct_in_a_row,numOfObjects];
     self.label_right_wrong.hidden = NO;
     self.label_did_didnt_match.hidden = NO;
     self.lastObjectView.hidden = NO;
@@ -168,10 +178,27 @@
         return;
     }
     NSInteger hint_index = self.gameManager.current_hint;
-    BoolConceptObject *hintObj = [self.gameManager getHint];
+    BoolConceptObject *hintObj;
+    BOOL isHintPositive = [self.gameManager getHintTo:&hintObj];
     BoolObjectView4Colors *hintView =     [self.hintViews objectAtIndex:hint_index];
+    UIImageView *hintPositiveImage = [self.hintImages objectAtIndex:hint_index];
     hintView.boolObject = hintObj;
+    UIImage *hintImg = [UIImage imageNamed:isHintPositive ? HINT_POSITIVE_IMG : HINT_NEGATIVE_IMG];
+    [hintPositiveImage setImage:hintImg];
     [hintView setHidden:NO];
+    [hintPositiveImage setHidden:NO];
+    
+    switch (hint_index) {
+        case 1:
+            [self.hintPlus1 setHidden:NO];
+            break;
+        case 2:
+            [self.hintPlus2 setHidden:NO];
+            break;
+        default:
+            break;
+    }
+    
     [hintView setNeedsDisplay];
 }
 
@@ -189,6 +216,22 @@
     [self getHint];
 }
 
+- (IBAction)clickedRestart:(id)sender {
+    [self startNewGame];
+}
 
+- (IBAction)clickedRules:(id)sender {
+    //TODO show rules
+}
+
+- (IBAction)clickedInfo:(id)sender {
+    NSMutableString *info = [self.gameManager.boolConcept dumpConceptLog];
+    
+    UIAlertController *alert =
+    [UIAlertController alertControllerWithTitle:@"Game Complexity Info" message:info preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end

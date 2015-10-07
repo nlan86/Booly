@@ -13,6 +13,9 @@
 
 #define VECTOR_CHARS_DICT @(-1): @"-", @(0): @"A", @(1): @"B", @(2): @"C", @(3): @"D"
 
+#define HINT_POSITIVE_IMG @"positive_filled_50px.png"
+#define HINT_NEGATIVE_IMG @"negative_filled_50px.png"
+
 #define BOOL_DEFAULT_NUM_OF_VALUES 2
 #define DEFAULT_NUMBER_OF_HINTS 3
 #define BOOL_GAME_DEFAULT_NUMBER_OF_EXEMPLARS 4

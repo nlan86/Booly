@@ -33,16 +33,30 @@
 @property (weak, nonatomic) IBOutlet BoolObjectView4Colors *hintView2;
 @property (weak, nonatomic) IBOutlet BoolObjectView4Colors *hintView3;
 
+//hint right/wrong images
+@property (weak, nonatomic) IBOutlet UIImageView *hintImage1;
+@property (weak, nonatomic) IBOutlet UIImageView *hintImage2;
+@property (weak, nonatomic) IBOutlet UIImageView *hintImage3;
+
+//hint pluses
+@property (weak, nonatomic) IBOutlet UILabel *hintPlus1;
+@property (weak, nonatomic) IBOutlet UILabel *hintPlus2;
+
+
+//last object view
 @property (weak, nonatomic) IBOutlet BoolObjectView4Colors *lastObjectView;
 
 //buttons
 @property (weak, nonatomic) IBOutlet UIButton *getHintButton;
+@property (weak, nonatomic) IBOutlet UIButton *restartButton;
+@property (weak, nonatomic) IBOutlet UIButton *rulesButton;
+@property (weak, nonatomic) IBOutlet UIButton *gameInfoButton;
 
-
-//array of exemplar views and hint views
+//arrays of exemplar views and hint views and images
 @property NSMutableArray *exemplarViews;
 @property NSMutableArray *negativeExemplarViews;
 @property NSMutableArray *hintViews;
+@property NSMutableArray *hintImages;
 
 //labels
 @property (weak, nonatomic) IBOutlet UILabel *label_complexity;

@@ -218,33 +218,32 @@
     return self;
 }
 
-- (void)dumpConceptLog {
-    NSLog(@"---------------------------");
-    NSLog(@"Debug dump for concept:");
-    NSLog(@"Number of objects = %lu", (unsigned long)[self.universe count]);
-    NSLog(@"Number of positives = %d", [self getNumberOfPositiveObjects]);
+- (NSMutableString*)dumpConceptLog {
+    
+    NSMutableString *retStr = [NSMutableString stringWithFormat:@""];
+    NSLog(@"%@",retStr);
+    [retStr appendString:@"Debug dump for concept:"];
+    [retStr appendString:[NSString stringWithFormat:@"\nNumber of objects = %lu", (unsigned long)[self.universe count]]];
+    [retStr appendString:[NSString stringWithFormat:@"\nNumber of positives = %d", [self getNumberOfPositiveObjects]]];
     
     BoolConceptObject *currObj;
     for (int i=0; i<[self.universe count]; i++) {
         currObj = [self getBoolObjectAtIndex:i];
-        if ([self isObjectInConcept:currObj]) NSLog(@"Object %@ - Containment: %d",  [currObj generateStringRepresentation], [self isObjectInConcept:currObj]);
+        if ([self isObjectInConcept:currObj]) [retStr appendString:[NSString stringWithFormat:@"\nObject %@ - Containment: %d",  [currObj generateStringRepresentation], [self isObjectInConcept:currObj]]];
     }
     
     
     if (self.powerSeries) {
         PowerSeries *power = self.powerSeries;
-        
         for (int i=0; i<[power.powerSeries count]; i++) {
-            NSLog(@"#%d power series: %@", i, [(BoolPolynomial*)[power.powerSeries objectAtIndex:i] generateStringRepresentation]);
+            [retStr appendString:[NSString stringWithFormat:@"\n#%d power series: %@", i, [(BoolPolynomial*)[power.powerSeries objectAtIndex:i] generateStringRepresentation]]];
         }
         for (int k=0; k<[power.powerSpectrum count]; k++) {
-            NSLog(@"K=%d, Power: %ld", k, (long)[power.powerSpectrum[k] integerValue]);
+            [retStr appendString:[NSString stringWithFormat:@"\nK=%d, Power: %ld", k, (long)[power.powerSpectrum[k] integerValue]]];
         }
-        NSLog(@"K+1 Complexity = %lu", (unsigned long)power.conceptComplexity);
-        NSLog(@"---------------------------");
+        [retStr appendString:[NSString stringWithFormat:@"\nK+1 Complexity = %lu", (unsigned long)power.conceptComplexity]];;
     }
-    
-    
+    return retStr;
 }
 
 #pragma mark class methods
