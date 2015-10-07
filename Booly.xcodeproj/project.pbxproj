@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB3BD2B01BBE9ECC00F4860E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2AF1BBE9ECC00F4860E /* main.m */; };
+		CB3BD2B31BBE9ECC00F4860E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2B21BBE9ECC00F4860E /* AppDelegate.m */; };
+		CB3BD2B91BBE9ECC00F4860E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3BD2B71BBE9ECC00F4860E /* Main.storyboard */; };
+		CB3BD2BB1BBE9ECC00F4860E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3BD2BA1BBE9ECC00F4860E /* Assets.xcassets */; };
+		CB3BD2BE1BBE9ECC00F4860E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3BD2BC1BBE9ECC00F4860E /* LaunchScreen.storyboard */; };
+		CB3BD2C91BBE9ECC00F4860E /* BoolyConceptTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2C81BBE9ECC00F4860E /* BoolyConceptTests.m */; };
+		CB3BD2D41BBE9ECC00F4860E /* BoolyConceptUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2D31BBE9ECC00F4860E /* BoolyConceptUITests.m */; };
+		CB3BD2EE1BBEEF5F00F4860E /* BoolConcept.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2E31BBEEF5F00F4860E /* BoolConcept.m */; settings = {ASSET_TAGS = (); }; };
+		CB3BD2EF1BBEEF5F00F4860E /* BoolConceptObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2E41BBEEF5F00F4860E /* BoolConceptObject.m */; settings = {ASSET_TAGS = (); }; };
+		CB3BD2F01BBEEF5F00F4860E /* BooleanVector.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2E61BBEEF5F00F4860E /* BooleanVector.m */; settings = {ASSET_TAGS = (); }; };
+		CB3BD2F11BBEEF5F00F4860E /* PowerSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2E91BBEEF5F00F4860E /* PowerSeries.m */; settings = {ASSET_TAGS = (); }; };
+		CB3BD2F21BBEEF5F00F4860E /* BooleanCommons.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2EC1BBEEF5F00F4860E /* BooleanCommons.m */; settings = {ASSET_TAGS = (); }; };
+		CB3BD2F31BBEEF5F00F4860E /* BoolPolynomial.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2ED1BBEEF5F00F4860E /* BoolPolynomial.m */; settings = {ASSET_TAGS = (); }; };
+		CB3BD2F91BBF017A00F4860E /* ObjectToGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3BD2F81BBF017A00F4860E /* ObjectToGraphics.m */; settings = {ASSET_TAGS = (); }; };
+		CB6B4C7C1BC199B0008EE1A3 /* BoolGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6B4C7B1BC199B0008EE1A3 /* BoolGameManager.m */; settings = {ASSET_TAGS = (); }; };
+		CBF8D6AA1BC0488600FF0A4F /* BoolObjectView4Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF8D6A91BC0488600FF0A4F /* BoolObjectView4Colors.m */; settings = {ASSET_TAGS = (); }; };
+		CBF8D6AD1BC0555600FF0A4F /* ColorsMainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF8D6AC1BC0555600FF0A4F /* ColorsMainScreenViewController.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB3BD2C51BBE9ECC00F4860E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3BD2A31BBE9ECC00F4860E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3BD2AA1BBE9ECC00F4860E;
+			remoteInfo = BoolyConcept;
+		};
+		CB3BD2D01BBE9ECC00F4860E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB3BD2A31BBE9ECC00F4860E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3BD2AA1BBE9ECC00F4860E;
+			remoteInfo = BoolyConcept;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB3BD2AB1BBE9ECC00F4860E /* BoolyConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoolyConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3BD2AF1BBE9ECC00F4860E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB3BD2B11BBE9ECC00F4860E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB3BD2B21BBE9ECC00F4860E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB3BD2B81BBE9ECC00F4860E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB3BD2BA1BBE9ECC00F4860E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB3BD2BD1BBE9ECC00F4860E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB3BD2BF1BBE9ECC00F4860E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB3BD2C41BBE9ECC00F4860E /* BoolyConceptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoolyConceptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3BD2C81BBE9ECC00F4860E /* BoolyConceptTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoolyConceptTests.m; sourceTree = "<group>"; };
+		CB3BD2CA1BBE9ECC00F4860E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB3BD2CF1BBE9ECC00F4860E /* BoolyConceptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoolyConceptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3BD2D31BBE9ECC00F4860E /* BoolyConceptUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoolyConceptUITests.m; sourceTree = "<group>"; };
+		CB3BD2D51BBE9ECC00F4860E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB3BD2E21BBEEF5F00F4860E /* BoolConcept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoolConcept.h; sourceTree = "<group>"; };
+		CB3BD2E31BBEEF5F00F4860E /* BoolConcept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoolConcept.m; sourceTree = "<group>"; };
+		CB3BD2E41BBEEF5F00F4860E /* BoolConceptObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoolConceptObject.m; sourceTree = "<group>"; };
+		CB3BD2E51BBEEF5F00F4860E /* BooleanVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooleanVector.h; sourceTree = "<group>"; };
+		CB3BD2E61BBEEF5F00F4860E /* BooleanVector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooleanVector.m; sourceTree = "<group>"; };
+		CB3BD2E71BBEEF5F00F4860E /* BoolPolynomial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoolPolynomial.h; sourceTree = "<group>"; };
+		CB3BD2E81BBEEF5F00F4860E /* PowerSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerSeries.h; sourceTree = "<group>"; };
+		CB3BD2E91BBEEF5F00F4860E /* PowerSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerSeries.m; sourceTree = "<group>"; };
+		CB3BD2EA1BBEEF5F00F4860E /* BoolConceptObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoolConceptObject.h; sourceTree = "<group>"; };
+		CB3BD2EB1BBEEF5F00F4860E /* BooleanCommons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooleanCommons.h; sourceTree = "<group>"; };
+		CB3BD2EC1BBEEF5F00F4860E /* BooleanCommons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooleanCommons.m; sourceTree = "<group>"; };
+		CB3BD2ED1BBEEF5F00F4860E /* BoolPolynomial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoolPolynomial.m; sourceTree = "<group>"; };
+		CB3BD2F71BBF017A00F4860E /* ObjectToGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectToGraphics.h; sourceTree = "<group>"; };
+		CB3BD2F81BBF017A00F4860E /* ObjectToGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectToGraphics.m; sourceTree = "<group>"; };
+		CB6B4C7A1BC199B0008EE1A3 /* BoolGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoolGameManager.h; sourceTree = "<group>"; };
+		CB6B4C7B1BC199B0008EE1A3 /* BoolGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoolGameManager.m; sourceTree = "<group>"; };
+		CBF8D6A81BC0488600FF0A4F /* BoolObjectView4Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoolObjectView4Colors.h; sourceTree = "<group>"; };
+		CBF8D6A91BC0488600FF0A4F /* BoolObjectView4Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoolObjectView4Colors.m; sourceTree = "<group>"; };
+		CBF8D6AB1BC0555600FF0A4F /* ColorsMainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorsMainScreenViewController.h; sourceTree = "<group>"; };
+		CBF8D6AC1BC0555600FF0A4F /* ColorsMainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorsMainScreenViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB3BD2A81BBE9ECC00F4860E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3BD2C11BBE9ECC00F4860E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3BD2CC1BBE9ECC00F4860E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB3BD2A21BBE9ECC00F4860E = {
+			isa = PBXGroup;
+			children = (
+				CB3BD2AD1BBE9ECC00F4860E /* Booly */,
+				CB3BD2C71BBE9ECC00F4860E /* BoolyConceptTests */,
+				CB3BD2D21BBE9ECC00F4860E /* BoolyConceptUITests */,
+				CB3BD2AC1BBE9ECC00F4860E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB3BD2AC1BBE9ECC00F4860E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BD2AB1BBE9ECC00F4860E /* BoolyConcept.app */,
+				CB3BD2C41BBE9ECC00F4860E /* BoolyConceptTests.xctest */,
+				CB3BD2CF1BBE9ECC00F4860E /* BoolyConceptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB3BD2AD1BBE9ECC00F4860E /* Booly */ = {
+			isa = PBXGroup;
+			children = (
+				CBF8D6A71BC037B100FF0A4F /* UI */,
+				CB3BD2E11BBEEF3500F4860E /* BooleanConceptFramework */,
+				CB3BD2B11BBE9ECC00F4860E /* AppDelegate.h */,
+				CB3BD2B21BBE9ECC00F4860E /* AppDelegate.m */,
+				CB3BD2B71BBE9ECC00F4860E /* Main.storyboard */,
+				CB3BD2BA1BBE9ECC00F4860E /* Assets.xcassets */,
+				CB3BD2BF1BBE9ECC00F4860E /* Info.plist */,
+				CB3BD2AE1BBE9ECC00F4860E /* Supporting Files */,
+			);
+			name = Booly;
+			path = BoolyConcept;
+			sourceTree = "<group>";
+		};
+		CB3BD2AE1BBE9ECC00F4860E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BD2BC1BBE9ECC00F4860E /* LaunchScreen.storyboard */,
+				CB3BD2AF1BBE9ECC00F4860E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB3BD2C71BBE9ECC00F4860E /* BoolyConceptTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BD2C81BBE9ECC00F4860E /* BoolyConceptTests.m */,
+				CB3BD2CA1BBE9ECC00F4860E /* Info.plist */,
+			);
+			path = BoolyConceptTests;
+			sourceTree = "<group>";
+		};
+		CB3BD2D21BBE9ECC00F4860E /* BoolyConceptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BD2D31BBE9ECC00F4860E /* BoolyConceptUITests.m */,
+				CB3BD2D51BBE9ECC00F4860E /* Info.plist */,
+			);
+			path = BoolyConceptUITests;
+			sourceTree = "<group>";
+		};
+		CB3BD2E11BBEEF3500F4860E /* BooleanConceptFramework */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BD2EB1BBEEF5F00F4860E /* BooleanCommons.h */,
+				CB3BD2EC1BBEEF5F00F4860E /* BooleanCommons.m */,
+				CB6B4C7A1BC199B0008EE1A3 /* BoolGameManager.h */,
+				CB6B4C7B1BC199B0008EE1A3 /* BoolGameManager.m */,
+				CB3BD2E21BBEEF5F00F4860E /* BoolConcept.h */,
+				CB3BD2E31BBEEF5F00F4860E /* BoolConcept.m */,
+				CB3BD2EA1BBEEF5F00F4860E /* BoolConceptObject.h */,
+				CB3BD2E41BBEEF5F00F4860E /* BoolConceptObject.m */,
+				CB3BD2E51BBEEF5F00F4860E /* BooleanVector.h */,
+				CB3BD2E61BBEEF5F00F4860E /* BooleanVector.m */,
+				CB3BD2E71BBEEF5F00F4860E /* BoolPolynomial.h */,
+				CB3BD2ED1BBEEF5F00F4860E /* BoolPolynomial.m */,
+				CB3BD2E81BBEEF5F00F4860E /* PowerSeries.h */,
+				CB3BD2E91BBEEF5F00F4860E /* PowerSeries.m */,
+			);
+			name = BooleanConceptFramework;
+			sourceTree = "<group>";
+		};
+		CBF8D6A71BC037B100FF0A4F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CB3BD2F71BBF017A00F4860E /* ObjectToGraphics.h */,
+				CB3BD2F81BBF017A00F4860E /* ObjectToGraphics.m */,
+				CBF8D6A81BC0488600FF0A4F /* BoolObjectView4Colors.h */,
+				CBF8D6A91BC0488600FF0A4F /* BoolObjectView4Colors.m */,
+				CBF8D6AB1BC0555600FF0A4F /* ColorsMainScreenViewController.h */,
+				CBF8D6AC1BC0555600FF0A4F /* ColorsMainScreenViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB3BD2AA1BBE9ECC00F4860E /* BoolyConcept */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3BD2D81BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConcept" */;
+			buildPhases = (
+				CB3BD2A71BBE9ECC00F4860E /* Sources */,
+				CB3BD2A81BBE9ECC00F4860E /* Frameworks */,
+				CB3BD2A91BBE9ECC00F4860E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoolyConcept;
+			productName = BoolyConcept;
+			productReference = CB3BD2AB1BBE9ECC00F4860E /* BoolyConcept.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB3BD2C31BBE9ECC00F4860E /* BoolyConceptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3BD2DB1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConceptTests" */;
+			buildPhases = (
+				CB3BD2C01BBE9ECC00F4860E /* Sources */,
+				CB3BD2C11BBE9ECC00F4860E /* Frameworks */,
+				CB3BD2C21BBE9ECC00F4860E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB3BD2C61BBE9ECC00F4860E /* PBXTargetDependency */,
+			);
+			name = BoolyConceptTests;
+			productName = BoolyConceptTests;
+			productReference = CB3BD2C41BBE9ECC00F4860E /* BoolyConceptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB3BD2CE1BBE9ECC00F4860E /* BoolyConceptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3BD2DE1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConceptUITests" */;
+			buildPhases = (
+				CB3BD2CB1BBE9ECC00F4860E /* Sources */,
+				CB3BD2CC1BBE9ECC00F4860E /* Frameworks */,
+				CB3BD2CD1BBE9ECC00F4860E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB3BD2D11BBE9ECC00F4860E /* PBXTargetDependency */,
+			);
+			name = BoolyConceptUITests;
+			productName = BoolyConceptUITests;
+			productReference = CB3BD2CF1BBE9ECC00F4860E /* BoolyConceptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB3BD2A31BBE9ECC00F4860E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Nur Lan";
+				TargetAttributes = {
+					CB3BD2AA1BBE9ECC00F4860E = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = HKQTZ4683W;
+					};
+					CB3BD2C31BBE9ECC00F4860E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CB3BD2AA1BBE9ECC00F4860E;
+					};
+					CB3BD2CE1BBE9ECC00F4860E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = CB3BD2AA1BBE9ECC00F4860E;
+					};
+				};
+			};
+			buildConfigurationList = CB3BD2A61BBE9ECC00F4860E /* Build configuration list for PBXProject "Booly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB3BD2A21BBE9ECC00F4860E;
+			productRefGroup = CB3BD2AC1BBE9ECC00F4860E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB3BD2AA1BBE9ECC00F4860E /* BoolyConcept */,
+				CB3BD2C31BBE9ECC00F4860E /* BoolyConceptTests */,
+				CB3BD2CE1BBE9ECC00F4860E /* BoolyConceptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB3BD2A91BBE9ECC00F4860E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3BD2BE1BBE9ECC00F4860E /* LaunchScreen.storyboard in Resources */,
+				CB3BD2BB1BBE9ECC00F4860E /* Assets.xcassets in Resources */,
+				CB3BD2B91BBE9ECC00F4860E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3BD2C21BBE9ECC00F4860E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3BD2CD1BBE9ECC00F4860E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB3BD2A71BBE9ECC00F4860E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3BD2EF1BBEEF5F00F4860E /* BoolConceptObject.m in Sources */,
+				CB3BD2F31BBEEF5F00F4860E /* BoolPolynomial.m in Sources */,
+				CB3BD2EE1BBEEF5F00F4860E /* BoolConcept.m in Sources */,
+				CBF8D6AA1BC0488600FF0A4F /* BoolObjectView4Colors.m in Sources */,
+				CBF8D6AD1BC0555600FF0A4F /* ColorsMainScreenViewController.m in Sources */,
+				CB3BD2F11BBEEF5F00F4860E /* PowerSeries.m in Sources */,
+				CB3BD2B31BBE9ECC00F4860E /* AppDelegate.m in Sources */,
+				CB3BD2B01BBE9ECC00F4860E /* main.m in Sources */,
+				CB3BD2F01BBEEF5F00F4860E /* BooleanVector.m in Sources */,
+				CB6B4C7C1BC199B0008EE1A3 /* BoolGameManager.m in Sources */,
+				CB3BD2F91BBF017A00F4860E /* ObjectToGraphics.m in Sources */,
+				CB3BD2F21BBEEF5F00F4860E /* BooleanCommons.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3BD2C01BBE9ECC00F4860E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3BD2C91BBE9ECC00F4860E /* BoolyConceptTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3BD2CB1BBE9ECC00F4860E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3BD2D41BBE9ECC00F4860E /* BoolyConceptUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB3BD2C61BBE9ECC00F4860E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB3BD2AA1BBE9ECC00F4860E /* BoolyConcept */;
+			targetProxy = CB3BD2C51BBE9ECC00F4860E /* PBXContainerItemProxy */;
+		};
+		CB3BD2D11BBE9ECC00F4860E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB3BD2AA1BBE9ECC00F4860E /* BoolyConcept */;
+			targetProxy = CB3BD2D01BBE9ECC00F4860E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB3BD2B71BBE9ECC00F4860E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB3BD2B81BBE9ECC00F4860E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB3BD2BC1BBE9ECC00F4860E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB3BD2BD1BBE9ECC00F4860E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB3BD2D61BBE9ECC00F4860E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB3BD2D71BBE9ECC00F4860E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB3BD2D91BBE9ECC00F4860E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: nurlan86@gmail.com (NYYU4XE8LN)";
+				INFOPLIST_FILE = BoolyConcept/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.BoolyConcept;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "abba1e47-227d-409b-ad10-dcd9a5cbc8dd";
+			};
+			name = Debug;
+		};
+		CB3BD2DA1BBE9ECC00F4860E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: nurlan86@gmail.com (NYYU4XE8LN)";
+				INFOPLIST_FILE = BoolyConcept/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.BoolyConcept;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "abba1e47-227d-409b-ad10-dcd9a5cbc8dd";
+			};
+			name = Release;
+		};
+		CB3BD2DC1BBE9ECC00F4860E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BoolyConceptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.BoolyConceptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoolyConcept.app/BoolyConcept";
+			};
+			name = Debug;
+		};
+		CB3BD2DD1BBE9ECC00F4860E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BoolyConceptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.BoolyConceptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoolyConcept.app/BoolyConcept";
+			};
+			name = Release;
+		};
+		CB3BD2DF1BBE9ECC00F4860E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BoolyConceptUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.BoolyConceptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BoolyConcept;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CB3BD2E01BBE9ECC00F4860E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BoolyConceptUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.BoolyConceptUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BoolyConcept;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB3BD2A61BBE9ECC00F4860E /* Build configuration list for PBXProject "Booly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3BD2D61BBE9ECC00F4860E /* Debug */,
+				CB3BD2D71BBE9ECC00F4860E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3BD2D81BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConcept" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3BD2D91BBE9ECC00F4860E /* Debug */,
+				CB3BD2DA1BBE9ECC00F4860E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3BD2DB1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConceptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3BD2DC1BBE9ECC00F4860E /* Debug */,
+				CB3BD2DD1BBE9ECC00F4860E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3BD2DE1BBE9ECC00F4860E /* Build configuration list for PBXNativeTarget "BoolyConceptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3BD2DF1BBE9ECC00F4860E /* Debug */,
+				CB3BD2E01BBE9ECC00F4860E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB3BD2A31BBE9ECC00F4860E /* Project object */;
+}
