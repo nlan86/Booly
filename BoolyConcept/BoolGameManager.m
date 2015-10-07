@@ -10,7 +10,6 @@
 
 @implementation BoolGameManager
 
-/** Drawn a new concept and starts a new game, assumes universe was already created for first game with same number of features and values */
 - (void)startNewGame {
     BoolConcept *existingConcept = self.boolConcept;
     BoolConcept *newConcept = [[BoolConcept alloc] initRandomLinearConceptForNumberOfFeatures:existingConcept.numberOfFeatures numberOfConstantImplications:1 numberOfPairwiseImplications:1 numOfValues:2 WithUniverse:existingConcept.universe];   //generate simple linear concept with 1 K0 and 1 K1 polynomials
@@ -18,7 +17,6 @@
     [self setupGameVars];
 }
 
-/** Sets up game variables, exemplars, etc. */
 - (void)setupGameVars {
     
     [self.boolConcept generatePowerSeries];
@@ -71,15 +69,10 @@
     self.corrects = 0;
 }
 
-/** returns YES if more hints, i.e., polynomials are left to give. */
 - (BOOL)isAnyHintLeft {
     return (self.current_hint < [self.boolConcept.powerSeries.powerSeries count]);
 }
 
-/** Returns a boolean object serving as a hint. Actually representing one of the polynomials of the power series
-    @param a pointer to the object to assign to
-    @return YES if the hint is positive, NO if the hint is negative
- */
 - (BOOL)getHintTo: (BoolConceptObject**)boolObj {
     //TODO implement
     if (![self isAnyHintLeft]) return nil;   //Just a sanity check. isAnyHintLeft should still be called before getHint.
@@ -115,9 +108,7 @@
 }
 
 
-/** Initializes a new game with difficulty affecting the concept complexity */
 - (id)initGameWithDifficulty:(NSInteger)difficulty {
-    
     self = [super init];
     if (self) {
         int numOfFeatures = BOOL_CONCEPT_DEFAULT_NUMBER_OF_FEATURES;
@@ -133,7 +124,6 @@
     
 }
 
-/** Returns next object for concept */
 - (BoolConceptObject*)getNextObject {
     //TODO ADVANCE RANDOMLY
     NSInteger nextIndex = (self.currBoolObjectIndex + 1) % self.number_of_object_in_game;
@@ -144,14 +134,12 @@
     return nextObj;
 }
 
-/** Checks if the user managed to learn the concept. Current criterion is being able to correctly identify all objects in a row */
 - (BOOL)isWin {
     //TODO MAYBE CONDITION TO WIN LESS HARSH?
     return (self.correct_in_a_row == self.number_of_object_in_game);
 //    return (self.corrects == self.number_of_object_in_game);
 }
 
-/** Checks if user was correct about current object being or not being correct for the regularity */
 - (BOOL)sendAnswerCheckIfCorrect:(BOOL)yesOrNo {
     NSLog(@"user answered %@", yesOrNo ? @"YES" : @"NO");
     NSLog(@"for object %@", [self.currBoolObject generateStringRepresentation]);

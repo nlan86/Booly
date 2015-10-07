@@ -13,6 +13,9 @@
 
 @class BoolObjectView4Colors;
 
+/*! @class ColorsMainScreenViewController
+ Handles the application's main view logic. Handles clicks and dispatches call to the game manager */
+
 @interface ColorsMainScreenViewController : UIViewController
 
 //positive object views

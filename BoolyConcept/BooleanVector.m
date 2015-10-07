@@ -12,11 +12,7 @@
 @implementation BooleanVector
 
 #pragma mark Class methods
-/** Class method - Generates all 2^num_of_features vectors in lexical order.
- \\param forNumberOfFeatures number of features
- \\param withFeatureOffset Add this amount to all feature values. Used with -1 when creating polynomials
- \\returns Mutable array filled with all feature vectures in lexical order
- */
+
 + (NSMutableArray*)generateAllVectorsForNumberOfFeatures:(int)forNumberOfFeatures forNumberOfValues: (int)numOfValues withFeatureOffset:(int)featureOffset {
     
     int numberOfObjects = (int) pow(numOfValues, forNumberOfFeatures);
@@ -54,9 +50,7 @@
 
 #pragma mark Instance methods
 
-/*! Counts number of positive features (1's) in instance
- \\returns count of positive features in vector
-*/
+
 -(NSInteger)countNumberOfPositiveFeaturesInVector {
     NSInteger count = 0;
     
@@ -71,19 +65,13 @@
 
 }
 
-/** Zero all vector values to value
- @param valueObject Object to set values to
- */
 -(void)setAllFeatureVectorValuesToObject:(id)valueObject {
     for (int i=0; i<self.numberOfFeatures; i++) {
         [self.featVector setObject:[valueObject copy] atIndexedSubscript:i];
     }
 }
 
-/*! Initializes a new boolean vector
- \\param numberOfFeatures number of features
- \\returns A vector with all features set to NO
- */
+
 - (id)initVectorWithNumberOfFeatures:(int)numberOfFeatures {
     self = [super init];
     if (self) {
@@ -98,10 +86,7 @@
     return [self initVectorWithNumberOfFeatures:BOOL_CONCEPT_DEFAULT_NUMBER_OF_FEATURES];
 }
 
-/** Compare to another feature vector
- @param vector the other vector
- @return YES if vectors are equal
- */
+
 - (BOOL) isEqualToVector: (BooleanVector*)vector {
     if (self.featVector == vector.featVector) return YES;
     return NO;

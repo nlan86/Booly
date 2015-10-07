@@ -14,7 +14,7 @@ typedef NSMutableArray PolynomialTheory;
 
 @implementation BoolPolynomial
 
-/** Comparison function used to sort the polynomials array */
+/*! Comparison function used to sort the polynomials array */
 NSInteger comparePolynomialKs (id first_p, id second_p, void *context) {
     NSInteger k1 = ((BoolPolynomial*)first_p).numberOfRegularitiesK;
     NSInteger k2 = ((BoolPolynomial*)second_p).numberOfRegularitiesK;
@@ -27,9 +27,7 @@ NSInteger comparePolynomialKs (id first_p, id second_p, void *context) {
 }
 
 
-/*! Initialize new polynomial with readymade regularity vector
-    \param regVector BooleanVector of boolean regularity features
- */
+
 -(id)initWithRegularityVector:(BooleanVector*)regVector {
     self = [super init];
     if (self) {
@@ -40,9 +38,7 @@ NSInteger comparePolynomialKs (id first_p, id second_p, void *context) {
     return self;
 }
 
-/*! Initialize new polynomial with number of features. Will create a polynomial of all 0's
-    \param numOfFeatures number of features
-*/
+
 -(id)initWithNumberOfFeatures: (int)numOfFeatures {
     BooleanVector* tempVector = [[BooleanVector alloc] initVectorWithNumberOfFeatures:numOfFeatures];
     return [self initWithRegularityVector:tempVector];
@@ -62,7 +58,6 @@ NSInteger comparePolynomialKs (id first_p, id second_p, void *context) {
     return [self.regularity generateStringRepresentation];
 }
 
-/**Returns a representation of the polynomial as a boolean object. "Dont cares" will be left as -1 */
 - (BoolConceptObject*)returnAsObject {
     BooleanVector *myVector = self.regularity;
     BoolConceptObject *retObject = [[BoolConceptObject alloc] initWithFeatureVector:[myVector copy]];
@@ -71,12 +66,10 @@ NSInteger comparePolynomialKs (id first_p, id second_p, void *context) {
 
 #pragma mark Class methods
 
-/** Generates a specified number of polynomials relevant to current universe with a specified degree K */
+
 + (NSMutableArray*)generateTheoryOfPolynomialsOfDegreeK:(int)k numberOfPolynomials:(int)num withNumberOfFeaturesD:(int)numOfFeatures forNumberOfValues:(int)numOfValues {
     
     NSArray *all_polynomials_sorted = [BoolPolynomial generateAllPolynomialsSortedForNumberOfFeatures:numOfFeatures forNumberOfValues:numOfValues];
-    
-
     
     NSMutableArray *retArray = [NSMutableArray arrayWithCapacity:num];
     //TODO
@@ -95,7 +88,7 @@ NSInteger comparePolynomialKs (id first_p, id second_p, void *context) {
     return retArray;
 }
 
-/** Generates all polynomials for current universe, lexically ordered according to Feldman (2006) algorythm. **/
+
 + (NSArray*) generateAllPolynomialsSortedForNumberOfFeatures: (int)numberOfFeatures forNumberOfValues:(int)numOfValues {
     
     NSMutableArray *all_polynomials_feature_vectors = [BooleanVector generateAllVectorsForNumberOfFeatures: numberOfFeatures forNumberOfValues:numOfValues+1 withFeatureOffset: -1];   //feature vectors for all polynomials, including a possibility of 'dont care' features (created by the -1 offset and the +1 for the values)

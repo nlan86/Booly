@@ -12,9 +12,14 @@
 
 @class ColorsMainScreenViewController;
 
+/*! @class ConceptView4Colors
+ UIView that represents a 4-feature boolean object 
+ */
+
 @interface BoolObjectView4Colors : UIView <UIGestureRecognizerDelegate>
 
 @property (weak) ColorsMainScreenViewController *parentViewController;
+/*! The boolean object to represent */
 @property BoolConceptObject *boolObject;
 
 @end
