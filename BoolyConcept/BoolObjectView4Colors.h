@@ -17,7 +17,8 @@
  */
 
 @interface BoolObjectView4Colors : UIView <UIGestureRecognizerDelegate>
-
+/* Sets an arrow to be drawn in case of two-factor polynomial hint */
+@property BOOL shouldDrawArrow;
 @property (weak) ColorsMainScreenViewController *parentViewController;
 /*! The boolean object to represent */
 @property BoolConceptObject *boolObject;

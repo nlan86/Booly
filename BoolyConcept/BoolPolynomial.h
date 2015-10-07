@@ -35,7 +35,7 @@
 - (NSString*)generateStringRepresentation;
 - (NSNumber*)getTermValueAt:(int)termIndex;
 /*!Returns a representation of the polynomial as a boolean object. "Dont cares" will be left as -1 */
-- (BoolConceptObject*)returnAsObject;
+- (BoolConceptObject*)returnAsHint;
 /*! Generates a specified number of polynomials relevant to current universe with a specified degree K */
 + (NSMutableArray*)generateTheoryOfPolynomialsOfDegreeK:(int)k numberOfPolynomials:(int)num withNumberOfFeaturesD:(int)numOfFeatures forNumberOfValues:(int)numOfValues ;
 /*! Generates all polynomials for current universe, lexically ordered according to Feldman (2006) algorythm. **/

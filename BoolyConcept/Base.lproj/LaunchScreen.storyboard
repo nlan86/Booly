@@ -15,8 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Booly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbD-zt-2w6">
+                                <rect key="frame" x="94" y="248" width="171" height="104"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="a boolean concepts game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7Z-nt-kDH">
+                                <rect key="frame" x="38" y="365" width="282" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VbD-zt-2w6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="U41-vb-zVK"/>
+                            <constraint firstItem="N7Z-nt-kDH" firstAttribute="top" secondItem="VbD-zt-2w6" secondAttribute="bottom" constant="13" id="Xox-m6-pQX"/>
+                            <constraint firstItem="N7Z-nt-kDH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cGm-CQ-acf"/>
+                            <constraint firstItem="VbD-zt-2w6" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="esL-Oy-gbN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

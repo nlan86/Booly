@@ -164,7 +164,6 @@
 }
 
 - (void)getHint {
-    //TODO total revamp
     //TODO show hints in different view
     //TODO or better, light-up the relevant squares in the exemplars
     
@@ -179,15 +178,13 @@
     }
     NSInteger hint_index = self.gameManager.current_hint;
     BoolConceptObject *hintObj;
-    BOOL isHintPositive = [self.gameManager getHintTo:&hintObj];
+    BOOL isHintImplication = [self.gameManager getHintTo:&hintObj];
+    NSLog(@"hint implication? %@", isHintImplication ? @"YES" : @"NO");
     BoolObjectView4Colors *hintView =     [self.hintViews objectAtIndex:hint_index];
-    UIImageView *hintPositiveImage = [self.hintImages objectAtIndex:hint_index];
+    hintView.shouldDrawArrow = isHintImplication;  //if hint is of 2 terms, draw a line between them
     hintView.boolObject = hintObj;
-    UIImage *hintImg = [UIImage imageNamed:isHintPositive ? HINT_POSITIVE_IMG : HINT_NEGATIVE_IMG];
-    [hintPositiveImage setImage:hintImg];
-    [hintView setHidden:NO];
-    [hintPositiveImage setHidden:NO];
     
+    //turn on hint pluses
     switch (hint_index) {
         case 1:
             [self.hintPlus1 setHidden:NO];
@@ -198,6 +195,17 @@
         default:
             break;
     }
+    [hintView setHidden:NO];
+    
+    /* hint positive/negative indicators. not relevant now
+     UIImageView *hintPositiveImage = [self.hintImages objectAtIndex:hint_index];
+
+    UIImage *hintImg = [UIImage imageNamed:isHintImplication ? HINT_POSITIVE_IMG : HINT_NEGATIVE_IMG];
+    [hintPositiveImage setImage:hintImg];
+    [hintPositiveImage setHidden:NO];
+    
+
+    */
     
     [hintView setNeedsDisplay];
 }

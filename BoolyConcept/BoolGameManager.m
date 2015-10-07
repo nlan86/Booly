@@ -12,7 +12,7 @@
 
 - (void)startNewGame {
     BoolConcept *existingConcept = self.boolConcept;
-    BoolConcept *newConcept = [[BoolConcept alloc] initRandomLinearConceptForNumberOfFeatures:existingConcept.numberOfFeatures numberOfConstantImplications:1 numberOfPairwiseImplications:1 numOfValues:2 WithUniverse:existingConcept.universe];   //generate simple linear concept with 1 K0 and 1 K1 polynomials
+    BoolConcept *newConcept = [[BoolConcept alloc] initRandomLinearConceptForNumberOfFeatures:existingConcept.numberOfFeatures numberOfConstantImplications:DEFAULT_DIFFICULTY_NUMBER_OF_CONSTANTS numberOfPairwiseImplications:DEFAULT_DIFFICULTY_NUMBER_OF_PAIRWISE numOfValues:2 WithUniverse:existingConcept.universe];   //generate simple linear concept with 1 K0 and 1 K1 polynomials
     self.boolConcept = newConcept;
     [self setupGameVars];
 }
@@ -74,33 +74,39 @@
 }
 
 - (BOOL)getHintTo: (BoolConceptObject**)boolObj {
-    //TODO implement
     if (![self isAnyHintLeft]) return nil;   //Just a sanity check. isAnyHintLeft should still be called before getHint.
     
     NSInteger numOfPositivesInPoly = [[self.boolConcept.powerSeries.powerSeries objectAtIndex:self.current_hint] numberOfRegularitiesK];
 
-    BoolConceptObject *retObj = [[self.boolConcept.powerSeries.powerSeries objectAtIndex:self.current_hint] returnAsObject];
+    BoolConceptObject *retObj = [[self.boolConcept.powerSeries.powerSeries objectAtIndex:self.current_hint] returnAsHint];
 
-    //if polynomial is K=0, we need to switch the color and present the hint as positive. if not, we leave it as is and declare the hint negative
-    NSInteger currFeature;
-    BOOL isHintPositive = (numOfPositivesInPoly == 1);
-    if (isHintPositive) {
-        for (int i=0; i<retObj.numberOfFeaturesD; i++) {
-            currFeature = [[retObj.objectFeatureVector.featVector objectAtIndex:i] integerValue];
-            if (currFeature == [BOOL_VECTOR_IGNORE_FEATURE integerValue]) continue; //keep going until 'care' feature is found
-            if (currFeature % 2 == 0) { //switch feature value
-                currFeature++;
+    //if polynomial is K=0, we need to switch the color and present the hint as positive. if not, we leave the first feature as is and switch the second one
+    NSInteger indexOfPositive = 0;
+    NSInteger currFeatureVal;
+    
+    for (int i=0; i<retObj.numberOfFeaturesD; i++) {
+        currFeatureVal = [[retObj.objectFeatureVector.featVector objectAtIndex:i] integerValue];
+        if (currFeatureVal == [BOOL_VECTOR_IGNORE_FEATURE integerValue]) continue; //keep going until 'care' feature is found
+        
+        if ((numOfPositivesInPoly == 1 && indexOfPositive == 0) || (numOfPositivesInPoly == 2 && indexOfPositive == 1)) {
+            
+            if (currFeatureVal % 2 == 0) { //switch feature value
+                currFeatureVal++;
             }
             else {
-                currFeature--;
+                currFeatureVal--;
             }
-            [retObj.objectFeatureVector.featVector setObject:@(currFeature) atIndexedSubscript:i];
+            [retObj.objectFeatureVector.featVector setObject:@(currFeatureVal) atIndexedSubscript:i];
+            break;
         }
+        indexOfPositive++;
     }
     
+    
+    BOOL isHintImplication = (numOfPositivesInPoly == 2);
     self.current_hint++;
     *boolObj = retObj;
-    return isHintPositive;
+    return isHintImplication;
 }
 
 - (void)resetHints {
@@ -115,7 +121,7 @@
         //setup game concept
         BoolConceptUniverse *theUniverse = [BoolConcept generateUniverseForNumberOfFeatures:numOfFeatures]; //create universe
         
-        BoolConcept *myConcept = [[BoolConcept alloc] initRandomLinearConceptForNumberOfFeatures:numOfFeatures numberOfConstantImplications:1 numberOfPairwiseImplications:1 numOfValues:2 WithUniverse:theUniverse];   //generate simple linear concept with 1 K0 and 1 K1 polynomials
+        BoolConcept *myConcept = [[BoolConcept alloc] initRandomLinearConceptForNumberOfFeatures:numOfFeatures numberOfConstantImplications:DEFAULT_DIFFICULTY_NUMBER_OF_CONSTANTS numberOfPairwiseImplications:DEFAULT_DIFFICULTY_NUMBER_OF_PAIRWISE numOfValues:2 WithUniverse:theUniverse];   //generate simple linear concept with 1 K0 and 1 K1 polynomials
         //TODO CONSIDER DIFFICULTY
         self.boolConcept = myConcept;
         [self setupGameVars];

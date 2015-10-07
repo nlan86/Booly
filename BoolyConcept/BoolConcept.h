@@ -56,7 +56,7 @@ typedef NSMutableArray BoolConceptUniverse;
  */
 - (void)deleteObjectFromConcept: (BoolConceptObject*)obj;
 /*! Getter for boolean objects in concept
- \param conceptNumber the object's index in universe
+ @param conceptNumber the object's index in universe
  \returns BoolConceptObject* of wanted object
  */
 - (BoolConceptObject*)getBoolObjectAtIndex:(NSInteger)conceptNumber;
@@ -65,7 +65,7 @@ typedef NSMutableArray BoolConceptUniverse;
 - (void)generatePowerSeries;
 
 /*! Randomly selects n objects from current concept and marks them as positive in the concept.
- \param numberOfObjectsToMark Number of objects to randomly select
+ @param numberOfObjectsToMark Number of objects to randomly select
  \returns Nothing.
  */
 - (void)randomSelectObjectsToConcept: (int)numberOfObjectsToMark;
@@ -73,12 +73,13 @@ typedef NSMutableArray BoolConceptUniverse;
 #pragma mark initialiazors
 
 /*! Initializes a new concept with randomly selected positive objects.
- \param withNumberOfFeatures number of features in universe
- \param numberOfPositiveObjects number of positive objects to randomly select
+ @param withNumberOfFeatures number of features in universe
+ @param numberOfPositiveObjects number of positive objects to randomly select
  */
 - (id)initRandomConceptWithNumberOfFeatures:(int)withNumberOfFeatures numberOfPositiveObjects:(int)numberOfPositiveObjects withUniverse:(NSMutableArray*)universe;
 /*! Initializes a new concept with all objects marked as positive
- \param withNumberOfFeatures number of features in universe
+ @param numberOfFeatures number of features in universe
+ @param universe the universe of all objects
  */
 - (id)initAsEntireUniverseWithNumberOfFeatures: (int)numberOfFeatures withUniverse:(NSMutableArray*)universe;
 /*! Creates a concept of objects from a polynomial collection theory. Implementation of theory2model by Feldman (2006). Important: Not always returns objects in same lexical order.
@@ -95,8 +96,8 @@ typedef NSMutableArray BoolConceptUniverse;
 #pragma mark class methods
 
 /*! Generates all boolean objects for given number of features. Used to save space and time when generating multiple concepts that use the same universe.
- \param numOfFeatures number of features in concept universe.
- \returns NSMutableArray of all BoolConceptObjects in concept universe, in lexical order.
+ @param forNumberOfFeatures number of features in concept universe.
+ @return NSMutableArray of all BoolConceptObjects in concept universe, in lexical order.
  */
 + (NSMutableArray*)generateUniverseForNumberOfFeatures:(int)forNumberOfFeatures;
 

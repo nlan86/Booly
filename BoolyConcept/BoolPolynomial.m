@@ -58,7 +58,7 @@ NSInteger comparePolynomialKs (id first_p, id second_p, void *context) {
     return [self.regularity generateStringRepresentation];
 }
 
-- (BoolConceptObject*)returnAsObject {
+- (BoolConceptObject*)returnAsHint {
     BooleanVector *myVector = self.regularity;
     BoolConceptObject *retObject = [[BoolConceptObject alloc] initWithFeatureVector:[myVector copy]];
     return retObject;
@@ -72,6 +72,8 @@ NSInteger comparePolynomialKs (id first_p, id second_p, void *context) {
     NSArray *all_polynomials_sorted = [BoolPolynomial generateAllPolynomialsSortedForNumberOfFeatures:numOfFeatures forNumberOfValues:numOfValues];
     
     NSMutableArray *retArray = [NSMutableArray arrayWithCapacity:num];
+    if (num == 0) return retArray;
+    
     //TODO
     NSUInteger numOfPolys = [all_polynomials_sorted count];
     NSUInteger loopCounter = 0, randP = 0;
