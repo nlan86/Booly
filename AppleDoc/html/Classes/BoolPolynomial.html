@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BoolPolynomial Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Booly </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">edu.self.BoolyConcept</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/numberOfFeatures">numberOfFeatures</option>
+		
+		<option value="//api/name/numberOfRegularitiesK">numberOfRegularitiesK</option>
+		
+		<option value="//api/name/regularity">regularity</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/generateAllPolynomialsSortedForNumberOfFeatures:forNumberOfValues:">+ generateAllPolynomialsSortedForNumberOfFeatures:forNumberOfValues:</option>
+		
+		<option value="//api/name/generateTheoryOfPolynomialsOfDegreeK:numberOfPolynomials:withNumberOfFeaturesD:forNumberOfValues:">+ generateTheoryOfPolynomialsOfDegreeK:numberOfPolynomials:withNumberOfFeaturesD:forNumberOfValues:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/initWithNumberOfFeatures:">- initWithNumberOfFeatures:</option>
+		
+		<option value="//api/name/initWithRegularityVector:">- initWithRegularityVector:</option>
+		
+		<option value="//api/name/returnAsHint">- returnAsHint</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BoolPolynomial Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BoolPolynomial.h<br />BoolPolynomial.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class BoolPolynomial
+This class represents a polynomial, basically identical to <a href="../Classes/BoolConceptObject.html">BoolConceptObject</a>, but offers more feature values - i.e., a &ldquo;Dont Care&rdquo; value, indicating a certain feature is not relevant in this polynomial. Also handles creating all permutations of polynomials in universe</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/regularity" title="regularity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/regularity">&nbsp;&nbsp;regularity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The polynomial regularity vector. Contains a value for each feature corresponding to the term&rsquo;s value, or &lsquo;Dont Care&rsquo; *</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property BooleanVector *regularity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The polynomial regularity vector. Contains a value for each feature corresponding to the term&rsquo;s value, or &lsquo;Dont Care&rsquo; *</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolPolynomial.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/numberOfFeatures" title="numberOfFeatures"></a>
+	<h3 class="method-title"><code><a href="#//api/name/numberOfFeatures">&nbsp;&nbsp;numberOfFeatures</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Number of features in polynomial for the concept&rsquo;s universe</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSInteger numberOfFeatures</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Number of features in polynomial for the concept&rsquo;s universe</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolPolynomial.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/numberOfRegularitiesK" title="numberOfRegularitiesK"></a>
+	<h3 class="method-title"><code><a href="#//api/name/numberOfRegularitiesK">&nbsp;&nbsp;numberOfRegularitiesK</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Number of  non-dont-care regularities in the polynomial</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSInteger numberOfRegularitiesK</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Number of  non-dont-care regularities in the polynomial</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolPolynomial.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithRegularityVector:" title="initWithRegularityVector:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithRegularityVector:">&ndash;&nbsp;initWithRegularityVector:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize new polynomial with readymade <a href="#//api/name/regularity">regularity</a> vector</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithRegularityVector:(BooleanVector *)<em>regVector</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>regVector</code></th>
+						<td><p><a href="../Classes/BooleanVector.html">BooleanVector</a> of boolean <a href="#//api/name/regularity">regularity</a> features</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initialize new polynomial with readymade <a href="#//api/name/regularity">regularity</a> vector</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolPolynomial.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithNumberOfFeatures:" title="initWithNumberOfFeatures:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithNumberOfFeatures:">&ndash;&nbsp;initWithNumberOfFeatures:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize new polynomial with number of features. Will create a polynomial of all 0&rsquo;s</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithNumberOfFeatures:(int)<em>numOfFeatures</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>numOfFeatures</code></th>
+						<td><p>number of features</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initialize new polynomial with number of features. Will create a polynomial of all 0&rsquo;s</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolPolynomial.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/returnAsHint" title="returnAsHint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/returnAsHint">&ndash;&nbsp;returnAsHint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a representation of the polynomial as a boolean object. &ldquo;Dont cares&rdquo; will be left as -1</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BoolConceptObject *)returnAsHint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a representation of the polynomial as a boolean object. &ldquo;Dont cares&rdquo; will be left as -1</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolPolynomial.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateTheoryOfPolynomialsOfDegreeK:numberOfPolynomials:withNumberOfFeaturesD:forNumberOfValues:" title="generateTheoryOfPolynomialsOfDegreeK:numberOfPolynomials:withNumberOfFeaturesD:forNumberOfValues:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateTheoryOfPolynomialsOfDegreeK:numberOfPolynomials:withNumberOfFeaturesD:forNumberOfValues:">+&nbsp;generateTheoryOfPolynomialsOfDegreeK:numberOfPolynomials:withNumberOfFeaturesD:forNumberOfValues:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates a specified number of polynomials relevant to current universe with a specified degree K</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSMutableArray *)generateTheoryOfPolynomialsOfDegreeK:(int)<em>k</em> numberOfPolynomials:(int)<em>num</em> withNumberOfFeaturesD:(int)<em>numOfFeatures</em> forNumberOfValues:(int)<em>numOfValues</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Generates a specified number of polynomials relevant to current universe with a specified degree K</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolPolynomial.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateAllPolynomialsSortedForNumberOfFeatures:forNumberOfValues:" title="generateAllPolynomialsSortedForNumberOfFeatures:forNumberOfValues:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateAllPolynomialsSortedForNumberOfFeatures:forNumberOfValues:">+&nbsp;generateAllPolynomialsSortedForNumberOfFeatures:forNumberOfValues:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates all polynomials for current universe, lexically ordered according to Feldman (2006) algorythm. *</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSArray *)generateAllPolynomialsSortedForNumberOfFeatures:(int)<em>numberOfFeatures</em> forNumberOfValues:(int)<em>numOfValues</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Generates all polynomials for current universe, lexically ordered according to Feldman (2006) algorythm. *</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolPolynomial.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Init new polynomial with default number of features and <a href="#//api/name/regularity">regularity</a> features all set to 0</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Init new polynomial with default number of features and <a href="#//api/name/regularity">regularity</a> features all set to 0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolPolynomial.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 edu.self.BoolyConcept. All rights reserved. Updated: 2015-10-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

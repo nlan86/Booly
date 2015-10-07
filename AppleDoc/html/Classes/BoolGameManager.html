@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BoolGameManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Booly </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">edu.self.BoolyConcept</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/boolConcept">boolConcept</option>
+		
+		<option value="//api/name/correct_in_a_row">correct_in_a_row</option>
+		
+		<option value="//api/name/corrects">corrects</option>
+		
+		<option value="//api/name/currBoolObject">currBoolObject</option>
+		
+		<option value="//api/name/currBoolObjectIndex">currBoolObjectIndex</option>
+		
+		<option value="//api/name/current_hint">current_hint</option>
+		
+		<option value="//api/name/number_of_object_in_game">number_of_object_in_game</option>
+		
+		<option value="//api/name/objects_answered_correctly">objects_answered_correctly</option>
+		
+		<option value="//api/name/positiveExemplars">positiveExemplars</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/getHintTo:">- getHintTo:</option>
+		
+		<option value="//api/name/getNextObject">- getNextObject</option>
+		
+		<option value="//api/name/initGameWithDifficulty:">- initGameWithDifficulty:</option>
+		
+		<option value="//api/name/isAnyHintLeft">- isAnyHintLeft</option>
+		
+		<option value="//api/name/isWin">- isWin</option>
+		
+		<option value="//api/name/sendAnswerCheckIfCorrect:">- sendAnswerCheckIfCorrect:</option>
+		
+		<option value="//api/name/setupGameVars">- setupGameVars</option>
+		
+		<option value="//api/name/startNewGame">- startNewGame</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BoolGameManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BoolGameManager.h<br />BoolGameManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class BoolGameManager
+This class handles functions and data relevant for the Boolean Concept game - initiating new games, providing the next object, providing hints and telling when a user won.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/positiveExemplars" title="positiveExemplars"></a>
+	<h3 class="method-title"><code><a href="#//api/name/positiveExemplars">&nbsp;&nbsp;positiveExemplars</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Array of examplars for current concept</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSMutableArray *positiveExemplars</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Array of examplars for current concept</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/boolConcept" title="boolConcept"></a>
+	<h3 class="method-title"><code><a href="#//api/name/boolConcept">&nbsp;&nbsp;boolConcept</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Boolean concept for this game</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property BoolConcept *boolConcept</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Boolean concept for this game</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currBoolObject" title="currBoolObject"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currBoolObject">&nbsp;&nbsp;currBoolObject</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Current boolean object displayed on screen</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property BoolConceptObject *currBoolObject</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Current boolean object displayed on screen</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/currBoolObjectIndex" title="currBoolObjectIndex"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currBoolObjectIndex">&nbsp;&nbsp;currBoolObjectIndex</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Index of current boolean object</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSInteger currBoolObjectIndex</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Index of current boolean object</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/correct_in_a_row" title="correct_in_a_row"></a>
+	<h3 class="method-title"><code><a href="#//api/name/correct_in_a_row">&nbsp;&nbsp;correct_in_a_row</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Number of correct answers in a row so far</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSInteger correct_in_a_row</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Number of correct answers in a row so far</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/corrects" title="corrects"></a>
+	<h3 class="method-title"><code><a href="#//api/name/corrects">&nbsp;&nbsp;corrects</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>number of correct answers so far</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSInteger corrects</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>number of correct answers so far</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/number_of_object_in_game" title="number_of_object_in_game"></a>
+	<h3 class="method-title"><code><a href="#//api/name/number_of_object_in_game">&nbsp;&nbsp;number_of_object_in_game</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Number of objects in concept</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSInteger number_of_object_in_game</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Number of objects in concept</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/current_hint" title="current_hint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/current_hint">&nbsp;&nbsp;current_hint</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Current hint number. Actually index of polynomial in power series</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSInteger current_hint</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Current hint number. Actually index of polynomial in power series</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/objects_answered_correctly" title="objects_answered_correctly"></a>
+	<h3 class="method-title"><code><a href="#//api/name/objects_answered_correctly">&nbsp;&nbsp;objects_answered_correctly</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>collects objects user answered correctly about</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSMutableArray *objects_answered_correctly</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>collects objects user answered correctly about</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initGameWithDifficulty:" title="initGameWithDifficulty:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initGameWithDifficulty:">&ndash;&nbsp;initGameWithDifficulty:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes a new game with difficulty affecting the concept complexity</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initGameWithDifficulty:(NSInteger)<em>difficulty</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes a new game with difficulty affecting the concept complexity</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNextObject" title="getNextObject"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNextObject">&ndash;&nbsp;getNextObject</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns next object for concept</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BoolConceptObject *)getNextObject</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns next object for concept</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isWin" title="isWin"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isWin">&ndash;&nbsp;isWin</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checks if the user managed to learn the concept. Current criterion is being able to correctly identify all objects in a row</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isWin</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Checks if the user managed to learn the concept. Current criterion is being able to correctly identify all objects in a row</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startNewGame" title="startNewGame"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startNewGame">&ndash;&nbsp;startNewGame</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Drawn a new concept and starts a new game, assumes universe was already created for first game with same number of features and values</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startNewGame</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Drawn a new concept and starts a new game, assumes universe was already created for first game with same number of features and values</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setupGameVars" title="setupGameVars"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setupGameVars">&ndash;&nbsp;setupGameVars</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets up game variables, exemplars, etc.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setupGameVars</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sets up game variables, exemplars, etc.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendAnswerCheckIfCorrect:" title="sendAnswerCheckIfCorrect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendAnswerCheckIfCorrect:">&ndash;&nbsp;sendAnswerCheckIfCorrect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checks if user was correct about current object being or not being correct for the regularity</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sendAnswerCheckIfCorrect:(BOOL)<em>yesOrNo</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Checks if user was correct about current object being or not being correct for the regularity</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getHintTo:" title="getHintTo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getHintTo:">&ndash;&nbsp;getHintTo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a boolean object serving as a hint. Actually representing one of the polynomials of the power series</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)getHintTo:(BoolConceptObject **)<em>boolObj</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>boolObj</code></th>
+						<td><p>pointer to the object to assign to</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if the hint is positive, NO if the hint is negative</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a boolean object serving as a hint. Actually representing one of the polynomials of the power series</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isAnyHintLeft" title="isAnyHintLeft"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isAnyHintLeft">&ndash;&nbsp;isAnyHintLeft</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>returns YES if more hints, i.e., polynomials are left to give.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isAnyHintLeft</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>returns YES if more hints, i.e., polynomials are left to give.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolGameManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 edu.self.BoolyConcept. All rights reserved. Updated: 2015-10-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

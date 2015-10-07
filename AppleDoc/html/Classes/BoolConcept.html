@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>BoolConcept Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Booly </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">edu.self.BoolyConcept</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/numberOfFeatures">numberOfFeatures</option>
+		
+		<option value="//api/name/positiveObjects">positiveObjects</option>
+		
+		<option value="//api/name/powerSeries">powerSeries</option>
+		
+		<option value="//api/name/universe">universe</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/generateUniverseForNumberOfFeatures:">+ generateUniverseForNumberOfFeatures:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/deleteObjectFromConcept:">- deleteObjectFromConcept:</option>
+		
+		<option value="//api/name/dumpConceptLog">- dumpConceptLog</option>
+		
+		<option value="//api/name/generatePowerSeries">- generatePowerSeries</option>
+		
+		<option value="//api/name/getBoolObjectAtIndex:">- getBoolObjectAtIndex:</option>
+		
+		<option value="//api/name/getNumberOfPositiveObjects">- getNumberOfPositiveObjects</option>
+		
+		<option value="//api/name/initAsEntireUniverseWithNumberOfFeatures:withUniverse:">- initAsEntireUniverseWithNumberOfFeatures:withUniverse:</option>
+		
+		<option value="//api/name/initConceptFromTheory:forNumberOfFeatures:withUniverse:">- initConceptFromTheory:forNumberOfFeatures:withUniverse:</option>
+		
+		<option value="//api/name/initRandomConceptWithNumberOfFeatures:numberOfPositiveObjects:withUniverse:">- initRandomConceptWithNumberOfFeatures:numberOfPositiveObjects:withUniverse:</option>
+		
+		<option value="//api/name/initRandomLinearConceptForNumberOfFeatures:numberOfConstantImplications:numberOfPairwiseImplications:numOfValues:WithUniverse:">- initRandomLinearConceptForNumberOfFeatures:numberOfConstantImplications:numberOfPairwiseImplications:numOfValues:WithUniverse:</option>
+		
+		<option value="//api/name/isEqualToConcept:">- isEqualToConcept:</option>
+		
+		<option value="//api/name/isObjectInConcept:">- isObjectInConcept:</option>
+		
+		<option value="//api/name/markObjectAsInConcept:">- markObjectAsInConcept:</option>
+		
+		<option value="//api/name/randomSelectObjectsToConcept:">- randomSelectObjectsToConcept:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">BoolConcept Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSCopying</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>BoolConcept.h<br />BoolConcept.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class BoolConcept
+This class simulates a boolean concept as defined by Feldman (2006), i.e., a collection of objects selected from the <a href="#//api/name/universe">universe</a> of all possible objects for a specified number of features and values.
+    This also includes handling creation of concepts from theories (i.e., collection of polynomials).</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/universe" title="universe"></a>
+	<h3 class="method-title"><code><a href="#//api/name/universe">&nbsp;&nbsp;universe</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Array of all objects possible for this concept, whether actually included in it or not</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property BoolConceptUniverse *universe</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Array of all objects possible for this concept, whether actually included in it or not</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/positiveObjects" title="positiveObjects"></a>
+	<h3 class="method-title"><code><a href="#//api/name/positiveObjects">&nbsp;&nbsp;positiveObjects</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Array of objects actually selected in concept. Contains pointers of BoolConceptObjects</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSMutableArray *positiveObjects</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Array of objects actually selected in concept. Contains pointers of BoolConceptObjects</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/numberOfFeatures" title="numberOfFeatures"></a>
+	<h3 class="method-title"><code><a href="#//api/name/numberOfFeatures">&nbsp;&nbsp;numberOfFeatures</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Number of features in concept feature vector</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property int numberOfFeatures</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Number of features in concept feature vector</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/powerSeries" title="powerSeries"></a>
+	<h3 class="method-title"><code><a href="#//api/name/powerSeries">&nbsp;&nbsp;powerSeries</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Power series object for concept. Contains spectrum and complexity. Use generatePowerSeriesAndSpectrum to generate</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property PowerSeries *powerSeries</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Power series object for concept. Contains spectrum and complexity. Use generatePowerSeriesAndSpectrum to generate</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNumberOfPositiveObjects" title="getNumberOfPositiveObjects"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNumberOfPositiveObjects">&ndash;&nbsp;getNumberOfPositiveObjects</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Number of objects in concept</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (int)getNumberOfPositiveObjects</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>number of objects in concept</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Number of objects in concept</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isEqualToConcept:" title="isEqualToConcept:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isEqualToConcept:">&ndash;&nbsp;isEqualToConcept:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checks if two concepts are the same. Compares actual values, not referenes. Efficient: only goes over positive objects.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToConcept:(BoolConcept *)<em>concept</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>concept</code></th>
+						<td><p>the other concept to compare to</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if both concept have the same number of features, and contain the same positive objects.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Checks if two concepts are the same. Compares actual values, not referenes. Efficient: only goes over positive objects.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isObjectInConcept:" title="isObjectInConcept:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isObjectInConcept:">&ndash;&nbsp;isObjectInConcept:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checks if object value exists in this concept (compares values, not pointer references)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isObjectInConcept:(BoolConceptObject *)<em>obj</em></code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if identical object is positive in object</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Checks if object value exists in this concept (compares values, not pointer references)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/markObjectAsInConcept:" title="markObjectAsInConcept:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/markObjectAsInConcept:">&ndash;&nbsp;markObjectAsInConcept:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Marks an object as belonging to concept</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)markObjectAsInConcept:(BoolConceptObject *)<em>obj</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>obj</code></th>
+						<td><p>The object to mark as positive</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Marks an object as belonging to concept</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteObjectFromConcept:" title="deleteObjectFromConcept:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteObjectFromConcept:">&ndash;&nbsp;deleteObjectFromConcept:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Deletes an object currently belonging to concept</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteObjectFromConcept:(BoolConceptObject *)<em>obj</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>obj</code></th>
+						<td><p>The object to mark as negative</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Deletes an object currently belonging to concept</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBoolObjectAtIndex:" title="getBoolObjectAtIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBoolObjectAtIndex:">&ndash;&nbsp;getBoolObjectAtIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Getter for boolean objects in concept</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BoolConceptObject *)getBoolObjectAtIndex:(NSInteger)<em>conceptNumber</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>conceptNumber</code></th>
+						<td><p>the object&rsquo;s index in <a href="#//api/name/universe">universe</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>BoolConceptObject* of wanted object</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Getter for boolean objects in concept</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generatePowerSeries" title="generatePowerSeries"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generatePowerSeries">&ndash;&nbsp;generatePowerSeries</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates the power series, power spectrum and complexity for this concept.
+Power Series object is accessed through self.<a href="#//api/name/powerSeries">powerSeries</a> *</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)generatePowerSeries</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Generates the power series, power spectrum and complexity for this concept.
+Power Series object is accessed through self.<a href="#//api/name/powerSeries">powerSeries</a> *</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/randomSelectObjectsToConcept:" title="randomSelectObjectsToConcept:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/randomSelectObjectsToConcept:">&ndash;&nbsp;randomSelectObjectsToConcept:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Randomly selects n objects from current concept and marks them as positive in the concept.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)randomSelectObjectsToConcept:(int)<em>numberOfObjectsToMark</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>numberOfObjectsToMark</code></th>
+						<td><p>Number of objects to randomly select</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Nothing.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Randomly selects n objects from current concept and marks them as positive in the concept.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initRandomConceptWithNumberOfFeatures:numberOfPositiveObjects:withUniverse:" title="initRandomConceptWithNumberOfFeatures:numberOfPositiveObjects:withUniverse:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initRandomConceptWithNumberOfFeatures:numberOfPositiveObjects:withUniverse:">&ndash;&nbsp;initRandomConceptWithNumberOfFeatures:numberOfPositiveObjects:withUniverse:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes a new concept with randomly selected positive objects.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initRandomConceptWithNumberOfFeatures:(int)<em>withNumberOfFeatures</em> numberOfPositiveObjects:(int)<em>numberOfPositiveObjects</em> withUniverse:(NSMutableArray *)<em>universe</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>withNumberOfFeatures</code></th>
+						<td><p>number of features in <a href="#//api/name/universe">universe</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>numberOfPositiveObjects</code></th>
+						<td><p>number of positive objects to randomly select</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes a new concept with randomly selected positive objects.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initAsEntireUniverseWithNumberOfFeatures:withUniverse:" title="initAsEntireUniverseWithNumberOfFeatures:withUniverse:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initAsEntireUniverseWithNumberOfFeatures:withUniverse:">&ndash;&nbsp;initAsEntireUniverseWithNumberOfFeatures:withUniverse:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes a new concept with all objects marked as positive</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initAsEntireUniverseWithNumberOfFeatures:(int)<em>numberOfFeatures</em> withUniverse:(NSMutableArray *)<em>universe</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>numberOfFeatures</code></th>
+						<td><p>number of features in <a href="#//api/name/universe">universe</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>universe</code></th>
+						<td><p>the <a href="#//api/name/universe">universe</a> of all objects</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes a new concept with all objects marked as positive</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initConceptFromTheory:forNumberOfFeatures:withUniverse:" title="initConceptFromTheory:forNumberOfFeatures:withUniverse:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initConceptFromTheory:forNumberOfFeatures:withUniverse:">&ndash;&nbsp;initConceptFromTheory:forNumberOfFeatures:withUniverse:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a concept of objects from a polynomial collection theory. Implementation of theory2model by Feldman (2006). Important: Not always returns objects in same lexical order.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BoolConcept *)initConceptFromTheory:(NSMutableArray *)<em>theoryPolynomials</em> forNumberOfFeatures:(int)<em>numOfFeatures</em> withUniverse:(NSMutableArray *)<em>universe</em></code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a new concept object filled with matching objects to given polynomials</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates a concept of objects from a polynomial collection theory. Implementation of theory2model by Feldman (2006). Important: Not always returns objects in same lexical order.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initRandomLinearConceptForNumberOfFeatures:numberOfConstantImplications:numberOfPairwiseImplications:numOfValues:WithUniverse:" title="initRandomLinearConceptForNumberOfFeatures:numberOfConstantImplications:numberOfPairwiseImplications:numOfValues:WithUniverse:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initRandomLinearConceptForNumberOfFeatures:numberOfConstantImplications:numberOfPairwiseImplications:numOfValues:WithUniverse:">&ndash;&nbsp;initRandomLinearConceptForNumberOfFeatures:numberOfConstantImplications:numberOfPairwiseImplications:numOfValues:WithUniverse:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Randomly draw linear polynomials (K=0 and K=1) and create a concept based on them. See Feldman (2006). *</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BoolConcept *)initRandomLinearConceptForNumberOfFeatures:(int)<em>numOfFeatures</em> numberOfConstantImplications:(int)<em>numOfConstants</em> numberOfPairwiseImplications:(int)<em>numOfPairwise</em> numOfValues:(int)<em>numOfValues</em> WithUniverse:(BoolConceptUniverse *)<em>universe</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Randomly draw linear polynomials (K=0 and K=1) and create a concept based on them. See Feldman (2006). *</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dumpConceptLog" title="dumpConceptLog"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dumpConceptLog">&ndash;&nbsp;dumpConceptLog</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Used for debugging, prints all information about the concept</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSMutableString *)dumpConceptLog</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Used for debugging, prints all information about the concept</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateUniverseForNumberOfFeatures:" title="generateUniverseForNumberOfFeatures:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateUniverseForNumberOfFeatures:">+&nbsp;generateUniverseForNumberOfFeatures:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generates all boolean objects for given number of features. Used to save space and time when generating multiple concepts that use the same <a href="#//api/name/universe">universe</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSMutableArray *)generateUniverseForNumberOfFeatures:(int)<em>forNumberOfFeatures</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>forNumberOfFeatures</code></th>
+						<td><p>number of features in concept <a href="#//api/name/universe">universe</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSMutableArray of all BoolConceptObjects in concept <a href="#//api/name/universe">universe</a>, in lexical order.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Generates all boolean objects for given number of features. Used to save space and time when generating multiple concepts that use the same <a href="#//api/name/universe">universe</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">BoolConcept.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 edu.self.BoolyConcept. All rights reserved. Updated: 2015-10-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

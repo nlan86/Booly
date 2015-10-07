@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PowerSeries Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Booly </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">edu.self.BoolyConcept</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/booleanConcept">booleanConcept</option>
+		
+		<option value="//api/name/conceptComplexity">conceptComplexity</option>
+		
+		<option value="//api/name/powerSeries">powerSeries</option>
+		
+		<option value="//api/name/powerSpectrum">powerSpectrum</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/calculateComplexity">- calculateComplexity</option>
+		
+		<option value="//api/name/generatePowerSeries">- generatePowerSeries</option>
+		
+		<option value="//api/name/generateSpectrum">- generateSpectrum</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/initCreateRandomConceptWithNumberOfFeatures:positiveObjects:">- initCreateRandomConceptWithNumberOfFeatures:positiveObjects:</option>
+		
+		<option value="//api/name/initWithConcept:">- initWithConcept:</option>
+		
+		<option value="//api/name/is_polynomial_correct_and_nontrivial:current_theory:current_model:">- is_polynomial_correct_and_nontrivial:current_theory:current_model:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">PowerSeries Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PowerSeries.h<br />PowerSeries.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class PowerSeries
+Handles the generation of the minimal, unique power series. Most methods are Objective-C implementations of the Matlab code offered by Feldman on <a href="http://ruccs.rutgers.edu/~jacob/demos/algebra.html">http://ruccs.rutgers.edu/~jacob/demos/algebra.html</a></p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/booleanConcept" title="booleanConcept"></a>
+	<h3 class="method-title"><code><a href="#//api/name/booleanConcept">&nbsp;&nbsp;booleanConcept</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>the boolean concept to generate the series and spectrum for. Weak because mutually linked from concept.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) BoolConcept *booleanConcept</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>the boolean concept to generate the series and spectrum for. Weak because mutually linked from concept.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/powerSeries" title="powerSeries"></a>
+	<h3 class="method-title"><code><a href="#//api/name/powerSeries">&nbsp;&nbsp;powerSeries</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An array of BoolPolynomials representing the power series</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSMutableArray *powerSeries</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An array of BoolPolynomials representing the power series</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/powerSpectrum" title="powerSpectrum"></a>
+	<h3 class="method-title"><code><a href="#//api/name/powerSpectrum">&nbsp;&nbsp;powerSpectrum</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An array of values representing the number of polynomials for each K</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSMutableArray *powerSpectrum</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An array of values representing the number of polynomials for each K</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/conceptComplexity" title="conceptComplexity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/conceptComplexity">&nbsp;&nbsp;conceptComplexity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A scalar representing the K+1 complexity for the concept. See Feldman (2006) for explanation</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property NSUInteger conceptComplexity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A scalar representing the K+1 complexity for the concept. See Feldman (2006) for explanation</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generatePowerSeries" title="generatePowerSeries"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generatePowerSeries">&ndash;&nbsp;generatePowerSeries</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Generate the power series of the current concept (self.<a href="#//api/name/booleanConcept">booleanConcept</a>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)generatePowerSeries</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of BoolPolynomial&rsquo;s representing the power series</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Generate the power series of the current concept (self.<a href="#//api/name/booleanConcept">booleanConcept</a>)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generateSpectrum" title="generateSpectrum"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generateSpectrum">&ndash;&nbsp;generateSpectrum</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sorts the power series into a power spectrum, keeps buckets of K values and counts number of polynomials in each K</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)generateSpectrum</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Sorts the power series into a power spectrum, keeps buckets of K values and counts number of polynomials in each K</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/calculateComplexity" title="calculateComplexity"></a>
+	<h3 class="method-title"><code><a href="#//api/name/calculateComplexity">&ndash;&nbsp;calculateComplexity</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Calculates the weighed K+1 complexity of power series, see Feldman (2006)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)calculateComplexity</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Calculates the weighed K+1 complexity of power series, see Feldman (2006)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/is_polynomial_correct_and_nontrivial:current_theory:current_model:" title="is_polynomial_correct_and_nontrivial:current_theory:current_model:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/is_polynomial_correct_and_nontrivial:current_theory:current_model:">&ndash;&nbsp;is_polynomial_correct_and_nontrivial:current_theory:current_model:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Checks if the candidate polynomial is correct for the given concept, and non-trivial. It is correct if it only produces objects within the concept, and non-trivial if in combination with the existing theory it generates a new model different from the current one.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)is_polynomial_correct_and_nontrivial:(BoolPolynomial *)<em>candidate_poly</em> current_theory:(NSMutableArray *)<em>current_theory</em> current_model:(BoolConcept *)<em>current_model</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>candidate_poly</code></th>
+						<td><p>The candidate polynomial to check</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>current_theory</code></th>
+						<td><p>The current collection of polynomials agreed to create the concept, sorted by K ascending order</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>current_model</code></th>
+						<td><p>the current collection of objects generated by the current theory</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if polynomial is correct and nontrivial</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Checks if the candidate polynomial is correct for the given concept, and non-trivial. It is correct if it only produces objects within the concept, and non-trivial if in combination with the existing theory it generates a new model different from the current one.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithConcept:" title="initWithConcept:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithConcept:">&ndash;&nbsp;initWithConcept:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes power series with given concept and calculates</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithConcept:(BoolConcept *)<em>theConcept</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>theConcept</code></th>
+						<td><p>concept to base on</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes power series with given concept and calculates</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initCreateRandomConceptWithNumberOfFeatures:positiveObjects:" title="initCreateRandomConceptWithNumberOfFeatures:positiveObjects:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initCreateRandomConceptWithNumberOfFeatures:positiveObjects:">&ndash;&nbsp;initCreateRandomConceptWithNumberOfFeatures:positiveObjects:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates random concept and initializes power series instance</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initCreateRandomConceptWithNumberOfFeatures:(int)<em>numOfFeatures</em> positiveObjects:(int)<em>numPositiveObjects</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>numOfFeatures</code></th>
+						<td><p>number of features</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>numPositiveObjects</code></th>
+						<td><p>number of positive objects in concept</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Creates random concept and initializes power series instance</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes Power Series with new random concept with default features and default positive features</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initializes Power Series with new random concept with default features and default positive features</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PowerSeries.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 edu.self.BoolyConcept. All rights reserved. Updated: 2015-10-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
